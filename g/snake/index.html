@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" type="text/css" href="css/snake.css"/>
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/snake.js"></script>
+</head>
+<body class="snake-back">
+    <div class="snake-div" hidden>
+        <div class="snake-tobar-box">
+            <i class="fa fa-pause snake-tobar-plugin snake-pause" title="暂停" onclick="pause()"></i>
+            <i class="fa fa-rotate-right snake-tobar-plugin snake-refresh" title="重玩" onclick="refresh()"></i>
+            <i class="fa fa-exchange snake-tobar-plugin snake-wallforbbid" title="允许穿墙" onclick="allowWall()"></i>
+            <i class="fa fa-angle-double-up snake-tobar-plugin snake-speedup" title="加速" onclick="s.speedUp()"></i>
+            <i class="fa fa-angle-double-down snake-tobar-plugin snake-speeddown" title="减速" onclick="s.speedDown()"></i>
+            <i class="fa fa-code-fork snake-tobar-plugin snake-speeddown" title="隐藏网格" onclick="hideWang()"></i>
+            <!--<i class="fa fa-heart snake-tobar-plugin snake-love" title="收藏"></i>-->
+        </div>
+        <!--<div class="snake-drop-header"></div>-->
+        <div class="snake-main"></div>
+
+    </div>
+</body>
+<script>
+
+
+
+</script>
+<script>
+    var s;
+    $(function(){
+        console.log(231);
+        init();
+        s = new Snake();
+        s.speedCallBack=function(){
+            $("#addSp").show();
+            setTimeout(function(){
+                $("#addSp").hide();
+            },1000);
+        };
+        $(window).on('keydown',function(event){
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if(e && e.keyCode==40){ //下
+                s.runDown();
+            }
+            if(e && e.keyCode==37){ //左
+                s.runLeft();
+            }
+            if(e && e.keyCode==39){ //右
+                s.runRight();
+            }
+            if(e && e.keyCode==38){
+                // 上
+                s.runUp();
+            }
+            //console.log(e.keyCode);
+            if(e && e.keyCode==32){
+                pause();
+            }
+        });
+        s.run();
+    });
+    function hideWang(){
+        if($(".snake-node").hasClass("snake-nowang")){
+            $(".snake-node").removeClass("snake-nowang");
+        }else{
+            $(".snake-node").addClass("snake-nowang");
+        }
+    }
+    function refresh(){
+        window.location.reload();
+    }
+    function allowWall() {
+        var a=s.allowReachWall();
+        if(a){
+            $(".snake-wallforbbid").removeClass("fa-long-arrow-right");
+            $(".snake-wallforbbid").addClass("fa-exchange");
+            $(".snake-wallforbbid").attr("title","不允许穿墙");
+        }else{
+            $(".snake-wallforbbid").addClass("fa-long-arrow-right");
+            $(".snake-wallforbbid").removeClass("fa-exchange");
+            $(".snake-wallforbbid").attr("title","允许穿墙");
+        }
+    }
+
+    function pause(){
+        if(s.isRun()){
+            s.pause();
+            $(".snake-pause").removeClass("fa-pause");
+            $(".snake-pause").addClass("fa-play");
+            $(".snake-pause").attr("title","继续");
+        }else{
+            s.run();
+            $(".snake-pause").addClass("fa-pause");
+            $(".snake-pause").removeClass("fa-play");
+            $(".snake-pause").attr("title","暂停");
+        }
+    }
+
+</script>
+</html>
