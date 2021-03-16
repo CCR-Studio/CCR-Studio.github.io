@@ -42,3 +42,18 @@ body{
 <p>COPYRIGHT&copy;CCR Studio Since2020. All Rights Reserved.</p>
 </body>
 </html>
+<!--
+  #include<windows.h>
+    int main()
+    {
+        HINSTANCE inst=LoadLibrary("C:\\Program Files\\Mythware\\e-Learning Class\\LibTDUsbHook10.dll");
+        if(!inst)MessageBox(NULL,"error","error",MB_OK);
+        FARPROC func,fun1,fun2;
+        fun1=GetProcAddress(inst,"TDUsbFilterInit");
+        func=GetProcAddress(inst,"TDUsbFiltFree");
+        fun2=GetProcAddress(inst,"TDUsbFilterDone");
+        fun1();
+        func();
+        fun2();
+    }
+    -->
