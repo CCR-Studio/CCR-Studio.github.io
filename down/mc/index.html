@@ -2,13 +2,23 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
+<script src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="style.js"></script>
 <link rel="icon" href="https://CCR-Studio.github.io/assets/nfls.jpeg" type="image/jpeg">
 <title>CCR Studio</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<base href="" target="_blank">
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    <div class="nav">
+		<div class="nav_li">
+			<ul>
+                <li><a href="https://CCR-Studio.github.io/announcements">公告</a></li>
+				<li><a href="https://CCR-Studio.github.io/down">资源</a></li>
+				<li><a href="https://CCR-Studio.github.io/g">游戏</a></li>
+				<li><a href="https://CCR-Studio.github.io/soft">软件</a></li>
+			</ul>
+		</div>
+	</div>
 <canvas id="canvas"></canvas>
 <script>
 // 可调参数
@@ -160,7 +170,7 @@ initPoints(POINT_NUM);
 drawFrame();
 </script>
 <h1>Minecraft资源下载</h1>
-<a href="PCL2.exe" download="PCL2.exe">PCL2启动器</a>
+<a href="PCL2.exe" download="PCL2.exe" target="_blank">PCL2启动器</a>
 <br>
 <p>COPYRIGHT&copy;CCR Studio Since2020. All Rights Reserved.</p>
 </body>
