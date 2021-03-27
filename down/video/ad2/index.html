@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/studio.ico">
+  <title>CCR Studio</title>
+  <style type="text/css">
+      body{
+        font-family:'Microsoft YaHei';
+      }
+  </style>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/DPlayer.css">
+<div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><br>
+<center><span id="btnV2" style="color:#676767;font-size:16px;cursor:pointer;">↑ 画面不动？没声音？点这里！</span> </center>
+<script src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/DPlayer.min.js"></script>
+<script>
+    $(function(){ 
+      const dp = new DPlayer({
+        container: document.getElementById('dplayer2'),
+        autoplay:!0,theme:"#42b983",loop:true,lang:"zh-cn",preload:"auto",volume:Number("0"),
+        video: {
+            url: 'https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/ad2/playlist.m3u8',
+            type: 'hls',
+            defaultQuality: 0,
+            pic: '',
+            thumbnails: '',
+        },
+    });
+    $("#btnV2").click(function(){
+       if($("#btnV2").html()=="↑ 没声音？点这里！"){
+        dp.play();
+        dp.volume(0.4);
+        $("#btnV2").html("↑ 太吵了，关掉！");
+       }else{
+        dp.volume(0);
+        $("#btnV2").html("↑ 没声音？点这里！");
+       }
+    }) 
+  })
+</script>  
+</body>
+</html>
