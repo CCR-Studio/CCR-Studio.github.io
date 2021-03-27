@@ -1,3 +1,13 @@
+<html>
+<head>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/studio.ico">
+  <title>CCR Studio</title>
+  <style type="text/css">
+      body{
+        font-family:'Microsoft YaHei';
+      }
+  </style>
+</head>
 <body>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/DPlayer.css">
 <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><br>
@@ -9,7 +19,7 @@
     $(function(){ 
       const dp = new DPlayer({
         container: document.getElementById('dplayer2'),
-        autoplay:!0,theme:"#42b983",loop:true,lang:"zh-cn",preload:"auto",volume:Number("4"),
+        autoplay:!0,theme:"#42b983",loop:true,lang:"zh-cn",preload:"auto",volume:Number("0"),
         video: {
             url: 'https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/down/video/header_sun/playlist.m3u8',
             type: 'hls',
@@ -31,3 +41,4 @@
   })
 </script>  
 </body>
+</html>
