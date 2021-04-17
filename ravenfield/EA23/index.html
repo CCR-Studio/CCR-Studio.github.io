@@ -1,0 +1,258 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/studio.ico">
+    <title>CCR Studio</title>
+    <script src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/style.js"></script>
+    <style type="text/css">
+      body{
+        font-family:'Microsoft YaHei';
+      }
+    </style>
+    </head>
+<body>
+    <div class="nav">
+		<div class="nav_li">
+			<ul>
+                <li><a href="https://ccr-studio.cf/announcements">公告</a></li>
+				<li><a href="https://ccr-studio.cf/down">资源</a></li>
+				<li><a href="https://ccr-studio.cf/g">游戏</a></li>
+				<li><a href="https://ccr-studio.cf/soft">软件</a></li>
+			</ul>
+		</div>
+	</div>
+<p>EA23是Ravenfield的第23个抢先体验版，发布于2020.12.20，主要更新了特别行动模式。</p>
+<p>更新日志：</p>
+<p>The Spec Ops update Pt 2 adds features such as Flares, Exfiltration and smarter patrols to the Spec Ops mode. When attacking objectives, it is good idea to strike quickly or using stealth to prevent the enemy from firing a signal flare, which attracts nearby patrols. Flares are also very bright, so they may blind on night levels when using Night Vision. The TALON spec ops team now carries C4 explosives, which can be planted on parked vehicles. You can even plant C4 without picking up the item in your loadout by walking up to the destroy target vehicle objective and pressing the use key to plant C4 with a 30 second timer. Alternatively, you can send one of your squadmates to plant an explosive using the squad command button. This should give you lots of options to completing your objective even if you forgot to bring anti-vehicle weapons!</p>
+<img src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/ravenfield/EA23/1.png" height="700">
+<p>TALON is now supported by a recon operative, EYES, who will call out nearby patrols and mark them on your minimap. This is very useful as suriving enemies on completed objectives may now leave their post and try to hunt you down. EYES is only available when playing as TALON on the Eagle team, so try playing on the Raven team for some extra challenge! </p>
+<img src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/ravenfield/EA23/2.png" height="150">
+<p>After completing all objectives, you must now make it to an exfiltration transport helicopter, and enter it with your squad to win. Alternatively, if all TALON operatives are alive and you are not being hunted by the enemy, you will exfiltrate on foot and skip the helicopter exfiltration entirely. Perfect for speedrunning :).</p>
+<p>Finally, EA23 adds much nicer post processing effects to the game. On top of improved Color Correction and Bloom, Ambient Occlusion is now available along with FXAA and SMAA anti-aliasing. You can find these options in the Video Options menu tab.</p>
+<br>
+<p>Full patch notes:</p>
+<p>Spec Ops Improvments:</p>
+<p>- Added Neutralize Patrol objective type.</p>
+<p>- Improved the spawning location of the attacking team, you should now always spawn around 200 meters away from the closest objective.</p>
+<p>- You can plant C4 on the "Destroy Vehicle" target by pressing the use key when close to it. This even works if you didn't bring any C4 or other anti-vehicle weapons.</p>
+<p>- You can order your squadmates to plant C4 on the "Destroy Vehicle" target by issuing a squad order using the quick squad order key.</p>
+<p>- Added EYES to Spec Ops. EYES is a recon operator who will provide you with intelligence on enemy patrol movement, such as alerting you if a patrol is about to spot you. EYES is only available when playing on the Eagle team.</p>
+<p>- Patrolling vehicles now have a maximum of 4 passengers</p>
+<p>- The balance slider can now be used to set the number of teammates in spec ops. Each soldier in the game preview image corresponds to one teammate.</p>
+<p>- Spec ops now uses the cinematic victory/defeat screens</p>
+<p>- Major improvements to defender AI in spec ops mode</p>
+<p>- Added flares, which a squad defending a flag will fire if they spot you. There is some delay before they are able to fire the flare, so it's a good idea to take them out quickly or using stealth.</p>
+<p>- Flares attract nearby patrols to the location. They are also quite bright so they may make your Night Vision unsuable.</p>
+<p>- You can be spotted from further away when standing under an active flare</p>
+<p>- Made the spec ops teammates harder to detect when they are close to the player.</p>
+<br>
+<p>There are now 2 possible endings to spec ops, either quick victory (where the game instantly ends when all objectives are completed) or helicopter exfiltration:</p>
+<p>- Quick victory will only fire if all attackers are still alive when the game ends. On large levels, you also need to be unseen by enemies when the game ends.</p>
+<p>- Helicopter exfil victory will fire otherwise, where you need to get to the exfil location and enter the helicopter.</p>
+<br>
+<p>Game Improvements:</p>
+<p>- Added remote detonated C4 weapon.</p>
+<p>- Fixed a bug which would cause tracking missiles to sometimes fail to track enemies.</p>
+<p>- Removed legacy post processing effects</p>
+<p>- Added new and shiny post processing effects using the Unity Post Processing Stack.</p>
+<p>- Added Color Correction, Bloom and Ambient Occlusion post processing effects and settings to options menu</p>
+<p>- Added support for FXAA, SMAA anti-aliasing.</p>
+<p>- Removed forced MSAA anti-aliasign when running the game on the highest graphics setting.</p>
+<p>- All levels now use improved post processing, including custom levels.</p>
+<p>- Fixed a bug where stabilized mounted turrets would rotate even when no-one is using them.</p>
+<p>- Night vision can now be toggled in spectator and photo mode without the screen turning black.</p>
+<p>- The version warning dialog box is now red and has larger text to make it stand out more.</p>
+<p>- Slightly increased the size of APC hitboxes</p>
+<p>- Fixed a pathfinding issue on temple near waterfalls at the center of the map</p>
+<p>- Fixed CSG meshes on Coastline not generating properly</p>
+<p>- Multiple mods can now be loaded when running the game in content mod test mode by specifying multiple -testcontentmod arguments in the launch options.</p>
+<p>- Dialog portraits now use higher quality compression so they look even nicer, particularly at 4k resolutions!</p>
+<p>- Made timers a bit more cache-friendly so you might see some slight speedups on computers with low memory speeds</p>
+<p>- When exiting a vehicle, it will no longer immediately automatically brake. This makes it way easier to ram enemies (or planting c4 on your vehicles as a moveable IED)</p>
+<p>- Fixed seat exit offset for jeep. You will now end up beside the jeep when exiting it.</p>
+<p>- When exiting a vehicle, you will now unholster the last equipped weapon.</p>
+<p>- Fixed bugs with throwable weapons (such as grenades and the c4). It should no longer be possible to throw an extra phantom grenade by spamming fire when you throw the last ammo. Also improved resupplying/reloading behaviour and fixed soft-lock bugs.</p>
+<p>- Minor improvements to helicopter AI. They will now tilt the helicopter less than before, unless they are attacking enemies.</p>
+<p>- Fixed bug where SL-defender would shoot slightly off to the right when rapid firing while aiming.</p>
+<p>- You can now use your carried weapons when inside the transport helicopter back seat row.</p>
+<p>- Improvements to helicopter landing zone generation so the exfil/transport helicopters now choose way better landing spots</p>
+<p>- Fixed a bug where the landing zone generation would always fail if multiple connected pathfinding boxes were used.</p>
+<br>
+<p>Improvements to the AI targeting system:</p>
+<p>- Bots will now prioritize targets better.</p>
+<p>- AI will now prefer to use weapons that are within the effective range, but will use weapons at up to twice their effective range if no other better weapon is available.</p>
+<p>- AI will now aim at a target faster if they were aiming at another nearby target before. For example, this makes it easier for a bot to take out a squad that is bunched together.</p>
+<p>- Fixed some issues with the attack target quick command.</p>
+<p>- Bots using target lock weapons will now lock onto targets much more reliably.</p>
+<p>- Bots will now fire as soon as they get a target lock.</p>
+<p>- Bots will now only fire one missile at a time if the target vehicle has countermeasures.</p>
+<p>- For vehicles without countermeasures, the bots will launch one missile at a time if the vehicle has less than 2000 max health. (In order to not waste ammo by launching 3 missiles towards a jeep).</p>
+<p>- AI will now take aim before firing weapons with AOE damage, reducing the risk of friendly fire and making them more deadly against vehicles:</p>
+<p>- AI will still fire quickly if the target is very close.</p>
+<br>
+<p>Ravenscript:</p>
+<p>- Added Car, Boat, Helicopter, Airplane classes</p>
+<p>- Added Value Monitors to ScriptedBehaviours which can be used to automatically notify a script of value changes on a variable or function.</p>
+<p>- Added Debug Value Monitors that can be used to easily monitor values when playing in content mod test mode.</p>
+<p>- Misc API additions and bugfixes</p>
+<br>
+<p>I will be taking a holiday break from development, but I have some exciting news to share when I get back regarding the Ravenfield 1.0 release. Until then. here is a little teaser image:</p>
+<img src="https://cdn.jsdelivr.net/gh/CCR-Studio/CCR-Studio.github.io/ravenfield/EA23/3.png" height="700">
+<p>I hope you'll enjoy this update and that you're excited for what is yet to come!</p>
+<br>
+<p>/Johan (SteelRaven7)</p>
+<br>
+<a href="https://ccr-studio.cf/about">COPYRIGHT&copy;CCR Studio Since2020. All Rights Reserved.</a>
+<canvas id="canvas"></canvas>
+<script>
+// 可调参数
+var BACKGROUND_COLOR = "rgba(0,43,54,1)";   // 背景颜色
+var POINT_NUM = 100;                        // 星星数目
+var POINT_COLOR = "rgba(255,255,255,0.7)";  // 点的颜色
+var LINE_LENGTH = 10000;                    // 点之间连线长度(的平方)
+
+// 创建背景画布
+var cvs = document.createElement("canvas");
+cvs.width = window.innerWidth;
+cvs.height = window.innerHeight;
+cvs.style.cssText = "\
+    position:fixed;\
+    top:0px;\
+    left:0px;\
+    z-index:-1;\
+    opacity:1.0;\
+    ";
+document.body.appendChild(cvs);
+
+var ctx = cvs.getContext("2d");
+
+var startTime = new Date().getTime();
+
+//随机数函数
+function randomInt(min, max) {
+    return Math.floor((max - min + 1) * Math.random() + min);
+}
+
+function randomFloat(min, max) {
+    return (max - min) * Math.random() + min;
+}
+
+//构造点类
+function Point() {
+    this.x = randomFloat(0, cvs.width);
+    this.y = randomFloat(0, cvs.height);
+
+    var speed = randomFloat(0.3, 1.4);
+    var angle = randomFloat(0, 2 * Math.PI);
+
+    this.dx = Math.sin(angle) * speed;
+    this.dy = Math.cos(angle) * speed;
+
+    this.r = 1.2;
+
+    this.color = POINT_COLOR;
+}
+
+Point.prototype.move = function () {
+    this.x += this.dx;
+    if (this.x < 0) {
+        this.x = 0;
+        this.dx = -this.dx;
+    } else if (this.x > cvs.width) {
+        this.x = cvs.width;
+        this.dx = -this.dx;
+    }
+    this.y += this.dy;
+    if (this.y < 0) {
+        this.y = 0;
+        this.dy = -this.dy;
+    } else if (this.y > cvs.height) {
+        this.y = cvs.height;
+        this.dy = -this.dy;
+    }
+}
+
+Point.prototype.draw = function () {
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.closePath();
+    ctx.fill();
+}
+
+var points = [];
+
+function initPoints(num) {
+    for (var i = 0; i < num; ++i) {
+        points.push(new Point());
+    }
+}
+
+var p0 = new Point(); //鼠标
+p0.dx = p0.dy = 0;
+var degree = 2.5;
+document.onmousemove = function (ev) {
+    p0.x = ev.clientX;
+    p0.y = ev.clientY;
+}
+document.onmousedown = function (ev) {
+    degree = 5.0;
+    p0.x = ev.clientX;
+    p0.y = ev.clientY;
+}
+document.onmouseup = function (ev) {
+    degree = 2.5;
+    p0.x = ev.clientX;
+    p0.y = ev.clientY;
+}
+window.onmouseout = function () {
+    p0.x = null;
+    p0.y = null;
+}
+
+function drawLine(p1, p2, deg) {
+    var dx = p1.x - p2.x;
+    var dy = p1.y - p2.y;
+    var dis2 = dx * dx + dy * dy;
+    if (dis2 < 2 * LINE_LENGTH) {
+        if (dis2 > LINE_LENGTH) {
+            if (p1 === p0) {
+                p2.x += dx * 0.03;
+                p2.y += dy * 0.03;
+            } else return;
+        }
+        var t = (1.05 - dis2 / LINE_LENGTH) * 0.2 * deg;
+        ctx.strokeStyle = "rgba(255,255,255," + t + ")";
+        ctx.beginPath();
+        ctx.lineWidth = 1.5;
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.closePath();
+        ctx.stroke();
+    }
+    return;
+}
+
+//绘制每一帧
+function drawFrame() {
+    cvs.width = window.innerWidth;
+    cvs.height = window.innerHeight;
+    ctx.fillStyle = BACKGROUND_COLOR;
+    ctx.fillRect(0, 0, cvs.width, cvs.height);
+
+    var arr = (p0.x == null ? points : [p0].concat(points));
+    for (var i = 0; i < arr.length; ++i) {
+        for (var j = i + 1; j < arr.length; ++j) {
+            drawLine(arr[i], arr[j], 1.0);
+        }
+        arr[i].draw();
+        arr[i].move();
+    }
+
+    window.requestAnimationFrame(drawFrame);
+}
+initPoints(POINT_NUM);
+drawFrame();
+</script>
+</body>
